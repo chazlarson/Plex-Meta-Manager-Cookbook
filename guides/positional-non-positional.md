@@ -1,4 +1,4 @@
- Positional and Non-positional overlay use in Plex Meta Manager
+## Positional and Non-positional overlay use in Plex Meta Manager
 
 Starting with two overlay images:
 
