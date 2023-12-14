@@ -6,5 +6,5 @@ These guides were originally published [for the most part] on Google Drive.
 
 [Guides](guides/README.md)
 
-[Recipes](defaults/README.md)
+[Recipes](cookbook/README.md)
 
