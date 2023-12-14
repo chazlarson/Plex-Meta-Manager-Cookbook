@@ -2,7 +2,11 @@
 
 [Using positional vs non-positional overlays](positional-non-positional.md)
 
+The plan is to convert some or all of these to Markdown; for now, here are links to the source Google Docs
+
 ## Source Documents
+
+[Directory](https://drive.google.com/drive/folders/19wmCc0MJ6fg8-FcrTvs0jzg84rbpz8og?usp=sharing)
 
 [How do ratings work?](https://docs.google.com/document/d/1yo7C9XOyfkj_RckFHnuS-LAFFNTeMBsmCs5kHT5akLs/edit?usp=sharing)
 
