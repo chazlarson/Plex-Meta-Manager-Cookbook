@@ -1,12 +1,4 @@
-## Plex-Meta-Manager Cookbook
-
-This repo contains articles written in response to recurring questions on the Plex-Meta-Manager Discord.
-
-These articles were originally published [for the most part] on Google Drive.
-
-There are also some cookbook-style "how-to" notes.
-
-Articles:
+## Articles:
 
 [Using positional vs non-positional overlays](positional-non-positional.md)
 
