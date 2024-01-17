@@ -4,7 +4,7 @@ General stuff that maybe will be moved to a better home.
 
 For example, you want to add a genre to things but don't want the colelction hanging around.
 
-```
+```yaml
 collections:
   Add-live-action-genre:
     plex_search:
