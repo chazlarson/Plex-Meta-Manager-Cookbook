@@ -1,6 +1,6 @@
 ## Articles:
 
-[Using positional vs non-positional overlays](positional-non-positional.md)
+[Using positional vs non-positional overlays](https://github.com/chazlarson/Plex-Meta-Manager-Cookbook/blob/main/guides/positional-non-positional.md)
 
 The plan is to convert some or all of these to Markdown; for now, here are links to the source Google Docs
 
