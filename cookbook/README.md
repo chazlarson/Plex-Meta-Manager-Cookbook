@@ -2,6 +2,6 @@
 
 Things that got covered in the discord.
 
-[asset folder creation](./asset_folder_creation.md)
+[asset folder creation](https://github.com/chazlarson/Plex-Meta-Manager-Cookbook/blob/main/cookbook/asset_folder_creation.md)
 
-[general](./general.md)
+[general](https://github.com/chazlarson/Plex-Meta-Manager-Cookbook/blob/main/cookbook/general.md)
