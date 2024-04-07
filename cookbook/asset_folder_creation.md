@@ -27,16 +27,16 @@ settings:
 `testing.yml`:
 ```
 templates:
-  alphabetic_collection:
+  some_template:
     tvdb_show: <<show>>
     url_poster: <<poster>>
 
 collections:
   poster YES:
-    template: {name: alphabetic_collection, show: "337907, 364080", poster: https://theposterdb.com/api/assets/203792}
+    template: {name: some_template, show: "337907, 364080", poster: https://theposterdb.com/api/assets/203792}
     
   poster NO:
-    template: {name: alphabetic_collection, show: "277092, 332747"}
+    template: {name: some_template, show: "277092, 332747"}
 ```
 
 Library has no collections.
