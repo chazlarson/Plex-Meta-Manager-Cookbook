@@ -1,3 +1,5 @@
+# 12 Runs exercising assets
+
 Relevant settings to start:
 
 ```
@@ -46,6 +48,8 @@ Every run is this command:
 python plex_meta_manager.py --run --config config/test-config.yml -dc
 ```
 
+## RUN 1
+---
 ### Run 01 changes:
 
 None
@@ -54,6 +58,8 @@ None
 
 nothing downloaded, no folders created
 
+## RUN 2
+---
 ### Run 02 changes:
 
 changed:
@@ -64,6 +70,8 @@ changed:
 
 nothing downloaded
 
+## RUN 3
+---
 ### Run 03 changes:
 
 changed:
@@ -74,6 +82,8 @@ changed:
 
 nothing downloaded
 
+## RUN 4
+---
 ### Run 04 changes:
 
 changed:
@@ -82,29 +92,33 @@ changed:
 ```
 ### Run 04 result:
 
-created `config/hampus-assets/poster NO`
-created `config/hampus-assets/poster YES`
-downloaded `https://theposterdb.com/api/assets/203792` to `config/hampus-assets/poster YES/poster.jpg`
+1. created `config/hampus-assets/poster NO`
+1. created `config/hampus-assets/poster YES`
+1. downloaded `https://theposterdb.com/api/assets/203792` to `config/hampus-assets/poster YES/poster.jpg`
 
+## RUN 5
+---
 ### Run 05 changes:
 
-delete `poster.jpg`
-change:
-```
-  create_asset_folders: false
-```
+1. delete `poster.jpg`
+1. change:
+    ```
+      create_asset_folders: false
+    ```
 
 ### Run 05 result:
 
 downloaded `https://theposterdb.com/api/assets/203792` to `config/hampus-assets/poster YES/poster.jpg`
 
+## RUN 6
+---
 ### Run 06 changes:
 
-delete `poster.jpg`
-change:
-```
-  asset_folders: false
-```
+1. delete `poster.jpg`
+1. change:
+    ```
+      asset_folders: false
+    ```
 ### Run 06 result:
 
 nothing downloaded
@@ -115,6 +129,8 @@ So there's something we've learned:
 ```
 REQUIRES `asset_folders: true`
 
+## RUN 7
+---
 ### Run 07 changes:
 
 change:
@@ -123,9 +139,11 @@ change:
 ```
 ### Run 07 result:
 
-nothing downloaded
-no folders created
+1. nothing downloaded
+1. no folders created
 
+## RUN 8
+---
 ### Run 08 changes:
 
 change:
@@ -134,9 +152,11 @@ change:
 ```
 ### Run 08 result:
 
-nothing downloaded
-no folders created
+1. nothing downloaded
+1. no folders created
 
+## RUN 9
+---
 ### Run 09 changes:
 
 changed:
@@ -147,19 +167,24 @@ changed:
 
 nothing created or downloaded
 
+## RUN 10
+---
 ### Run 10 changes:
 
 manually created: `config/hampus-assets/TV`
 
 ### Run 10 result:
 
-created `config/hampus-assets/TV/poster NO`
-created `config/hampus-assets/TV/poster YES`
-downloaded `https://theposterdb.com/api/assets/203792` to `config/hampus-assets/TV/poster YES/poster.jpg`
+1. created `config/hampus-assets/TV/poster NO`
+1. created `config/hampus-assets/TV/poster YES`
+1. downloaded `https://theposterdb.com/api/assets/203792` to `config/hampus-assets/TV/poster YES/poster.jpg`
 
 So there's something we've learned:
+
 PMM will not create asset directories, only directories WITHIN asset directories 
 
+## RUN 11
+---
 ### Run 11 changes:
 
 uncomment:
@@ -174,20 +199,24 @@ uncomment:
 3500 folders created [one for every show in the library]
 
 So there's something we've learned:
+
 running a mass poster update, even if it doesn't set the art, triggers the "look for an asset and create the folder if needed and enabled" logic
 
+## RUN 12
+---
 ### Run 12 changes:
 
-delete all 3500 movie asset folders
-change:
-```
+1. delete all 3500 movie asset folders
+1. change:
+    ```
         assets_for_all: true
-```
+    ```
 ### Run 12 result:
 
-3500 folders created [one for every show in the library]
+1. 3500 folders created [one for every show in the library]
 
 So there's something we've learned:
+
 mass poster reset creating asset folders does not depend on `assets_for_all`
 
 Summary:
